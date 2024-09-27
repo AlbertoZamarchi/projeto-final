@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--Definindo um documento HTML 5-->
+<html lang="pt-br" class="light">
+  <!--esse é  o html em si, o "document element" ou documento raiz, logo ao lado tem atributo lang, que define a linguagem da pagina-->
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--responsavel por ajustar configurações do documento que não são visiveis para quem está acessando a nossa pagina, com a única coisa sendo visivel aqui é o "title"-->
+    <meta charset="UTF-8" />
+    <!--esse meta com atributo charset, UTF-8 definindo o conjunto de caracteres nessa pagina com ã e ç, entre outros-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--fazer uma compatibilidade com os navegadores mais antigos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--está definindo que a parte visivel (viewporte) com o conteudo (content) como largure (width) do dispositivo device VAI SE APATAR AO TAMALHO DA SUA JANELA, onde a escala inicial para isso (initial-scale) é 1.0-->
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--serve para linkar o docmento "style.css"-->
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/avatar.png"
+          alt="Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barba e fundo amarelo"
+        />
+        <p>@maykbrito</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+     
+      <ul>
+        <li>
+          <a href="#">Inscrever-se no NLW</a>
+        </li>
+
+        <li>
+          <a href="#">Baixar meu e-book</a>
+        </li>
+
+        <li>
+          <a href="http://github.com/maykbrito" target="_blank"
+            >Ver meu portifólio</a
+          >
+        </li>
+
+        <li>
+          <a href="http://rocketseat.com.br/explorer" target="_blank"
+            >Conheça o Explorer</a
+          >
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://github.com/maykbrito" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a href="https://instagram.com/maykbrito" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="https://youtube.com/maykbrito" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+
+        <a href="https://linkedin.com/in/maykbrito" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+       <footer>
+        Feito com ♥ pela <a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a>
+       </footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
